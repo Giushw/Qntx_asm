@@ -3,14 +3,18 @@ import React from 'react';
 export default class Navigation extends React.Component {
 	
 	constructor(props) {
-    super(props);
-    this.state = {
+		super(props);
+		this.state = {
 			active: false,
 			highligthed: false
 		};
-  }
+	}
 
-	componentDidMount() {
+	selectedVoice = (comparator, value) => {
+		if (value === comparator) {
+			return true;
+		}
+		return false;
 	}
 
 	openMenu = () => {
@@ -28,9 +32,12 @@ export default class Navigation extends React.Component {
 							let lower = menuVoice;
 							return (
 								<li key={menuVoice} className="__row">
-									<span className={`__item ${this.state.highligthed ? 'is-selected' : ''}`}
+									<span className={`__item ${this.selectedVoice(this.props.showNow, lower.toLowerCase()) ? 'is-selected' : ''}`}
 										data-link={lower.toLowerCase()}
-										onClick={() => this.props.changeShowNow(lower.toLowerCase())}
+										onClick={() => {
+											this.props.changeShowNow(lower.toLowerCase());
+											this.openMenu();
+										}}
 									>
 										{menuVoice}
 									</span>

@@ -101,28 +101,28 @@
 			"description": "CodeMaster is a bootcamp in Web Development that offers intensive programming courses for developers and entrepreneurs. It is an intense and highly-practical bootcamp with more than 450 hours of practical instruction over the course of 12 weeks. Technologies: HTML5, CSS3, Javascript,NodeJS,ReactJS. Good development practices: UX & UI planning and design, focus on clean code principles, design patterns and agile methodologies."
 		}
 	],
-	"skills": [
-		"CSS (CSS3)",
-		"JavaScript (ES&)",
-		"HTML (HTML5)",
-		"SASS (SCSS)",
-		"Vue.js",
-		"Git",
-		"Figma",
-		"Invision",
-		"Adobe Illustrator",
-		"Photoshop",
-		"ITCSS",
-		"RSCSS",
-		"BEM",
-		"Cypress",
-		"Jest",
-		"Webpack",
-		"Grunt",
-		"Gulp",
-		"React",
-		"Node.js"
-	],
+	"skills": {
+		"template": [
+			"Webpack / Grunt",
+			"Git",
+			"HTML (HTML5)"
+		],
+		"style": [
+			"ITCSS / RSCSS / BEM ",
+			"SASS (SCSS)",
+			"CSS (CSS3)"
+		],
+		"code": [
+			"React / Jest / Cypress",
+			"JavaScript (ES6)",
+			"Vue.js"
+		],
+		"design": [
+			"Illustrator / Photoshop",
+			"Invision",
+			"Figma"
+		]
+	},
 	"goals": {
 		"languages": [
 			{

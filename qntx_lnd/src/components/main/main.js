@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from '../views/home';
-import AboutMe from '../views/aboutMe'
+import AboutMe from '../views/aboutMe';
+import Skills from '../views/skills';
 
 export default class Main extends React.Component {
 	
@@ -18,9 +19,10 @@ export default class Main extends React.Component {
 		if (this.props.showNow === "about me") {
 			return <AboutMe info={this.props.persons.info} /> 
 		}
-		// if (this.state.showNow === "skills") {
-		// 	return <Main nome={this.state.persons.role}/> 
-		// }
+		if (this.props.showNow === "skills") {
+			return <Skills skills={this.props.persons.skills} /> 
+			// 
+		}
 		// if (this.state.showNow === "portfolio") {
 		// 	return <Main nome="stocazzo"/> 
 		// }

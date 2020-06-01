@@ -46,7 +46,7 @@ export default class AppWrapper extends React.Component {
     return (
       <div className="app-wrapper">
         <Canvas />
-        <Navigation list={this.state.menus} changeShowNow={this.changeShow}/>
+        <Navigation list={this.state.menus} showNow={this.state.showNow} changeShowNow={this.changeShow}/>
         <Main showNow={this.state.showNow} persons={this.state.persons}/>       
     </div>
     )

@@ -5,7 +5,7 @@ export function Home(props) {
 		<div className="home">
 			<div className="__portrait"></div>
 			<h1 className="__hello">
-				Hey Ciao! <br/>
+				Ciao! <br/>
 				Sono <span className="__name">{props.nome} </span><br/>
 				{props.role}
 			</h1>

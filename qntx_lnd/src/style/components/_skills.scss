@@ -1,0 +1,407 @@
+// Skills
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	padding: 1rem;
+
+	.__intestation {
+		font-size: 5rem;
+		padding: 1rem 3rem;
+		background-color: $color__secondary--light;
+		margin-bottom: 2rem;
+	}
+
+	.__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100%;
+		height: 600px;
+	}
+
+	.__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 300px;
+
+		&.--reverse {
+			.__column {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+
+	.__column {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 50%;
+		height: 300px;
+	}
+
+	.__cell {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		position: relative;
+		padding: 1rem;
+		height: 300px;
+		background-color: rgba($color__primary--dark, .7);
+		// transform: skew(10deg, 10deg);
+		transition: transform 0.5s ease-in-out;
+
+		&:last-of-type {
+			background-color: rgba($color__secondary--light, .8);
+		}
+	}
+
+	.skill-list {
+		list-style: none;
+
+		.__item {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			&::before {
+				content: "•";
+				color: inherit;
+				display: inline-block; 
+				line-height: 1rem;
+				font-size: 5rem;
+				width: 2rem;
+				height: 2rem;
+				background-color: rgba($color__primary--light, .1);
+				margin-right: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			&:first-of-type {
+				&::before {
+					color: $color__secondary--dark;
+				}
+			}
+
+			&:nth-of-type(2) {
+				&::before {
+					color: $color__secondary--light;
+				}
+			}
+
+			&:last-of-type {
+				&::before{
+					color: $color__accent--light;
+				}
+			}
+
+		}
+
+		.__text {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: $color__primary--light;
+		}
+	}
+
+	.skills-graph {
+		fill: transparent;
+		transform: rotate(-90deg) scale(0.9);
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		margin: 0 auto;
+		visibility: visible;
+		fill:transparent;
+		animation-fill-mode: forwards;
+		animation-duration: 1s;
+		animation-delay: 0.3s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+		animation-direction: normal;
+		opacity: 0;
+
+		&.--primary {
+			stroke: $color__primary--light;
+		}
+
+		&.--secondary {
+			stroke: $color__secondary;
+		}
+
+		&.--accent {
+			stroke: $color__accent;
+		}
+
+		// first graph
+		&.--outer1 {
+			animation-name: outer1;
+			stroke-dasharray: 880;
+			stroke-dashoffset: 100;
+		}
+
+		&.--center1 {
+			animation-name: center1;
+			stroke-dasharray: 691;
+			stroke-dashoffset: 271;
+		}
+
+		&.--inner1 {
+			animation-name: inner1;
+			stroke-dasharray: 502;
+			stroke-dashoffset: 172;
+		}
+
+		@keyframes outer1 {
+			0% {
+				stroke-dashoffset: 880;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary--dark;
+			}
+			100% {
+				stroke-dashoffset: 300;
+				stroke:$color__secondary--dark;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes center1 {
+			0% {
+				stroke-dashoffset: 691;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary;
+			}
+			100% {
+				stroke-dashoffset: 150;
+				stroke: $color__secondary;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes inner1 {
+			0% {
+				stroke-dashoffset: 502;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__accent--light;
+			}
+			100% {
+				stroke-dashoffset: 50;
+				stroke: $color__accent--light;
+				opacity: 1;
+			}
+		}
+
+		// second graph
+		&.--outer2 {
+			animation-name: outer2;
+			stroke-dasharray: 880;
+			stroke-dashoffset: 175;
+		}
+
+		&.--center2 {
+			animation-name: center2;
+			stroke-dasharray: 691;
+			stroke-dashoffset: 50;
+		}
+
+		&.--inner2 {
+			animation-name: inner2;
+			stroke-dasharray: 502;
+			stroke-dashoffset: 15;
+		}
+
+		@keyframes outer2 {
+			0% {
+				stroke-dashoffset: 880;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary--dark;
+			}
+			100% {
+				stroke-dashoffset: 175;
+				stroke:$color__secondary--dark;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes center2 {
+			0% {
+				stroke-dashoffset: 691;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary;
+			}
+			100% {
+				stroke-dashoffset: 50;
+				stroke: $color__secondary;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes inner2 {
+			0% {
+				stroke-dashoffset: 502;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__accent--light;
+			}
+			100% {
+				stroke-dashoffset: 15;
+				stroke: $color__accent--light;
+				opacity: 1;
+			}
+		}
+
+		// third graph
+		&.--outer3 {
+			animation-name: outer3;
+			stroke-dasharray: 880;
+			stroke-dashoffset: 375;
+		}
+
+		&.--center3 {
+			animation-name: center3;
+			stroke-dasharray: 691;
+			stroke-dashoffset: 150;
+		}
+
+		&.--inner3 {
+			animation-name: inner3;
+			stroke-dasharray: 502;
+			stroke-dashoffset: 70;
+		}
+
+		@keyframes outer3 {
+			0% {
+				stroke-dashoffset: 880;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary--dark;
+			}
+			100% {
+				stroke-dashoffset: 375;
+				stroke:$color__secondary--dark;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes center3 {
+			0% {
+				stroke-dashoffset: 691;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__secondary;
+			}
+			100% {
+				stroke-dashoffset: 150;
+				stroke: $color__secondary;
+				opacity: 1;
+			}
+		}
+	
+		@keyframes inner3 {
+			0% {
+				stroke-dashoffset: 502;
+				stroke: $color__secondary--light;
+			}
+			50% {
+				stroke: $color__accent--light;
+			}
+			100% {
+				stroke-dashoffset: 70;
+				stroke: $color__accent--light;
+				opacity: 1;
+			}
+		}
+
+			// forth graph
+			&.--outer4 {
+				animation-name: outer4;
+				stroke-dasharray: 880;
+				stroke-dashoffset: 450;
+			}
+	
+			&.--center4 {
+				animation-name: center4;
+				stroke-dasharray: 691;
+				stroke-dashoffset: 220;
+			}
+	
+			&.--inner4 {
+				animation-name: inner4;
+				stroke-dasharray: 502;
+				stroke-dashoffset: 125;
+			}
+	
+			@keyframes outer4 {
+				0% {
+					stroke-dashoffset: 880;
+					stroke: $color__secondary--light;
+				}
+				50% {
+					stroke: $color__secondary--dark;
+				}
+				100% {
+					stroke-dashoffset: 450;
+					stroke:$color__secondary--dark;
+					opacity: 1;
+				}
+			}
+		
+			@keyframes center4 {
+				0% {
+					stroke-dashoffset: 691;
+					stroke: $color__secondary--light;
+				}
+				50% {
+					stroke: $color__secondary;
+				}
+				100% {
+					stroke-dashoffset: 220;
+					stroke: $color__secondary;
+					opacity: 1;
+				}
+			}
+		
+			@keyframes inner4 {
+				0% {
+					stroke-dashoffset: 502;
+					stroke: $color__secondary--light;
+				}
+				50% {
+					stroke: $color__accent--light;
+				}
+				100% {
+					stroke-dashoffset: 125;
+					stroke: $color__accent--light;
+					opacity: 1;
+				}
+			}
+	}
+
+}

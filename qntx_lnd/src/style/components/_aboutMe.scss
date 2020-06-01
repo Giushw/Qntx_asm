@@ -1,10 +1,43 @@
 // About Me
 
 .aboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 80%;
+		height: 100%;
+		padding: 1rem;
+
+		.__intestation {
+				font-size: 5rem;
+				padding: 1rem 3rem;
+				background-color: $color__secondary--light;
+				margin-bottom: 2rem;
+		}
+
+		.__content {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: center;
+		}
+
+		.__paragraph {
+				color: $color__primary;
+				width: 80%;
+				font-weight: 500;
+				font-size: 1.5rem;
+				padding: 1rem;
+				background-color: rgba($color__secondary--light, 0.8);
+				margin-bottom: 1.5rem;
+
+				&:nth-of-type(2) {
+						align-self: flex-start;
+				}
+
+				&:last-of-type {
+						margin-bottom: none;
+				}
+		}
 }

@@ -43,7 +43,7 @@
 
 		&:hover {
 			& .__item {
-				text-shadow: 18px 18px 4px $color__accent--light; ;
+				text-shadow: 18px 18px 4px $color__accent--light;
 			}
 		}
 	}
@@ -60,7 +60,7 @@
 		transition: text-shadow 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 		&.is-selected {
-			text-shadow: 18px 18px 4px $color__accent--light; ;
+			text-shadow: 18px 18px 4px $color__accent--light;
 		}
 	}
 
