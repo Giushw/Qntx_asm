@@ -1,0 +1,37 @@
+// Style in ITCSS structure
+
+// 00 Settings
+@import "./settings/fonts";
+@import "./settings/globals";
+@import "./settings/colors";
+
+// 01 Tools
+@import "./tools/mixins";
+@import "./tools/breakpoints";
+
+// 02 Generics
+@import "./generic/normalize";
+@import "./generic/sanitize";
+@import "./generic/resets";
+
+// 03 Elements
+@import "./elements/body";
+@import "./elements/typographies";
+@import "./elements/color";
+@import "./elements/forms";
+
+// 04 Objects
+@import "./objects/layout";
+@import "./objects/animation";
+
+// 05 Components
+@import "./components/navigation";
+@import "./components/home";
+@import "./components/aboutMe";
+
+// 06 Utilities
+@import "./utilities/globals";
+
+
+
+

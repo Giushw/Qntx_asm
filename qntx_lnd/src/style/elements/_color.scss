@@ -1,0 +1,29 @@
+// Color Fill Classes
+
+$colorMap: (
+		__primary: $color__primary,											// #212121
+		__primary--light: $color__primary--light,				// #484848
+		__primary--dark: $color__primary--dark,					// #000000
+		__secondary: $color__secondary,									// #fafafa
+		__secondary--light: $color__secondary--light,		// #ffffff
+		__secondary--dark: $color__secondary--dark,			// #c7c7c7
+		__accent: $color__accent,												// #00fa9a
+		__accent--light: $color__accent--light,					// #6bffcb
+		__accent--dark: $color__accent--dark,						// #00c66b
+);
+
+// Svg
+
+.svg-color {
+	@each $name, $value in $colorMap {
+		&#{$name} {
+			fill: $value;
+		}
+	}
+}
+
+.mix-blend-mode {
+	&--multiply {
+		mix-blend-mode: multiply;
+	}
+}

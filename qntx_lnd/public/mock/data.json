@@ -1,0 +1,159 @@
+{
+	"firstname":"Giuseppe",
+	"lastname":"Dell'Avvocato",
+	"img": "https://media-exp1.licdn.com/dms/image/C5603AQEeW_Ylqo3UwA/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=qN-TlYUfijBVMDcKECX9Wj1Zmb49K5TshgehZnfpJsM",
+	"role": "Frontend Developer / Designer",
+	"location": {
+		"city": "Milano",
+		"province": "Lombardia",
+		"state": "Italia"
+	},
+	"info": {
+		"intro": "Appassionato di tecnologia sin dalla tenera età, con una spiccata curiosità nel comprenderne i meandri nascosti, per poi poterli utilizzare a mio piacimento. Mi diletto nell’analizzare ed osservare qualcosa che non conosco, per poi poterlo piegare al mio volere!",
+		"body": "Mi affaccio al mondo del web developing con la voglia di migliorare ogni giorno, dopo averne visto svariati ambiti (programmazione/sistemismo), e non volendomi limitare ad un etichetta troppo stretta. Nel mio futuro prossimo, intravedo anche un invasione nel continente grafico che mi ha sempre affascinato.",
+		"outro": "Ho Studiato alla TAG Innovation School di Talent Garden Calabiana per acquisire le competenze e i metodi di lavoro necessari al fine di diventare un frontend web developer/designer, collaborando con tanti professionisti al mio pari. Sto per iniziare una nuova avventura professionale che rappresenta per me una grande opportunità di crescita."
+	},
+	"social": {
+		"linkedin":"https://www.linkedin.com/in/giuseppedellavvocato/",
+		"github":"https://github.com/Giushw",
+		"behance":"https://www.behance.net/dellavvocac17e",
+		"youtube":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	},
+	"experiences":[
+		{
+			"role": "Frontend Developer",
+			"name": "Playground S.r.l",
+			"type": "A Tempo Pieno",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHZUAoj9RuWzw/company-logo_100_100/0?e=1599091200&v=beta&t=XkUlN6cI4gcngQl5kvSk50VH7wTQLMGcOkLD76BI8yc",
+			"when": "feb 2018 - corrente",
+			"where": "Milano",
+			"description": {
+				"intro": "Realizzazione di Landing page con:",
+				"points": [
+					"Pug + Html5;",
+					"Sass / Scss (entrambi);",
+					"JQuery e Git."
+				]
+			}
+		},
+		{
+			"role": "Frontend Designer",
+			"name": "Philmark / Vivaticket",
+			"type": "A Tempo Pieno",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHZUAoj9RuWzw/company-logo_100_100/0?e=1599091200&v=beta&t=XkUlN6cI4gcngQl5kvSk50VH7wTQLMGcOkLD76BI8yc",
+			"when": "ott 2018 - fab 2020",
+			"where": "Milano",
+			"description": {
+				"intro": "Sviluppo di una Web App Ibrida SPA / Server Side on con:",
+				"points": [
+					"Html5 e CsHtml ( C# / Mvc Razor);",
+					"Vue.js, Js vanilla/ES6 e librerie Umd;",
+					"Utilizzando taskmanager Webpack / Gulp;",
+					"Preprocessori Sass (Scss) con coding standard proprietario ideato mischinado BEM + RSCSS in una architettura ITCSS;",
+					"Cura del Design a stretto contatto con il team dedito e partecipazione allo studio con successiva realizzazione delle animazioni (web motion design);",
+					"Utilizzo di CVS (Git) via terminale e gestione ed implementazione del git flow del team di progetto in contesto di metodo di lavoro Agile (Scrum).",
+					"Gestione tracking Analytics + interazione con le Web Speech API.",
+					"Integrazione Di E2E Test con Cypress e Unit Test con Jest."
+				]
+			}
+		},
+		{
+			"role": "Frontend Designer",
+			"name": "MotorK",
+			"type": "A Tempo Pieno",
+			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQExMRR14CjzGw/company-logo_100_100/0?e=1599091200&v=beta&t=GU3J2PVSiXRRXQSdvqfwxe7jqTBM9ZH9B8Jk1Ya-0Fw",
+			"when": "ago 2017 – ott 2018",
+			"where": "Milano",
+			"description": {
+				"intro": "Sviluppo di Single Web application con:",
+				"points": [
+					"Vue.js, task manager Webpack ​ ​​Preprocessori Sass (Scss) + BEM;",
+					"Cura del Design del i clienti publisher e inserimenti Adv DoubleClick;",
+					"Utilizzo di CVS (Git) via terminale e Agile teamwork cross-disciplinare."
+				]
+			}
+		},
+		{
+			"role": "Frontend Developer Intern",
+			"name": "MotorK",
+			"type": "A Tempo Pieno",
+			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQExMRR14CjzGw/company-logo_100_100/0?e=1599091200&v=beta&t=GU3J2PVSiXRRXQSdvqfwxe7jqTBM9ZH9B8Jk1Ya-0Fw",
+			"when": "feb 2017 – ago 2018",
+			"where": "Milano",
+			"description": {
+				"intro": "Sviluppo siti Web attraverso tecnologie:",
+				"points": [
+					"​Html5​, e parzializzazione, dinamicizzazione PHP;",
+					"​Css con ​​Preprocessori Sass (Scss) con Nomenclature BEM;",
+					"​​Relizzazione Dem Cross Device;",
+					"Impiego di Sistemi Di Versioning GIT e Agile teamwork cross-disciplinare."
+				]
+			}
+		}
+	],
+	"formation": [
+		{
+			"name": "TAG Innovation School",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHZUAoj9RuWzw/company-logo_100_100/0?e=1599091200&v=beta&t=XkUlN6cI4gcngQl5kvSk50VH7wTQLMGcOkLD76BI8yc",
+			"course": "Codemaster Bootcamp, CodeMaster Front-end Edition, Front end developer",
+			"when": "2016 - 2017",
+			"where": "Milano",
+			"description": "CodeMaster is a bootcamp in Web Development that offers intensive programming courses for developers and entrepreneurs. It is an intense and highly-practical bootcamp with more than 450 hours of practical instruction over the course of 12 weeks. Technologies: HTML5, CSS3, Javascript,NodeJS,ReactJS. Good development practices: UX & UI planning and design, focus on clean code principles, design patterns and agile methodologies."
+		}
+	],
+	"skills": [
+		"CSS (CSS3)",
+		"JavaScript (ES&)",
+		"HTML (HTML5)",
+		"SASS (SCSS)",
+		"Vue.js",
+		"Git",
+		"Figma",
+		"Invision",
+		"Adobe Illustrator",
+		"Photoshop",
+		"ITCSS",
+		"RSCSS",
+		"BEM",
+		"Cypress",
+		"Jest",
+		"Webpack",
+		"Grunt",
+		"Gulp",
+		"React",
+		"Node.js"
+	],
+	"goals": {
+		"languages": [
+			{
+				"name": "Italiano",
+				"grade": "Conoscenza madrelingua o bilingue"
+			},
+			{
+				"name": "Inglese",
+				"grade": "Conoscenza professionale"
+			},
+			{
+				"name": "Spagnolo",
+				"grade": "Conoscenza base"
+			},
+			{
+				"name": "Francese",
+				"grade": "Conoscenza lavorativa limitata"
+			},
+			{
+				"name": "Giapponese",
+				"grade": "Conoscenza lavorativa limitata"
+			}
+		],
+		"prizes": [
+			{
+				"title": "2 posto Hackathon Editoria del Futuro",
+				"when": "ott 2017",
+				"where": "Talent Garden Fondazione Agnelli",
+				"link": "riconoscimentohttp://www.ecodibergamo.it/stories/bergamo-citta/editoria-innovativa-la-gara-a-torinoleco-nella-squadra-al-secondo-posto_1259800_11/"
+			}
+		]
+	}
+
+}
