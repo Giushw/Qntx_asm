@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../views/home';
 import AboutMe from '../views/aboutMe';
 import Skills from '../views/skills';
+import Portfolio from '../views/portfolio'
 
 export default class Main extends React.Component {
 	
@@ -21,12 +22,11 @@ export default class Main extends React.Component {
 		}
 		if (this.props.showNow === "skills") {
 			return <Skills skills={this.props.persons.skills} /> 
-			// 
 		}
-		// if (this.state.showNow === "portfolio") {
-		// 	return <Main nome="stocazzo"/> 
-		// }
-		// if (this.state.showNow === "esperenzie") {
+		if (this.props.showNow === "portfolio") {
+			return <Portfolio goals={this.props.persons.goals} works={this.props.persons.works} social={this.props.persons.social}/> 
+		}
+		// if (this.props.showNow === "esperenzie") {
 		// 	return <Main nome="cippa"/> 
 		// }
 		return null;

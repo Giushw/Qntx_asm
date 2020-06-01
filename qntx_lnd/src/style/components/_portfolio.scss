@@ -1,0 +1,83 @@
+// Portfolio
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	padding: 1rem;
+
+	.__intestation {
+		font-size: 5rem;
+		padding: 1rem 3rem;
+		background-color: $color__secondary--light;
+		margin-bottom: 2rem;
+	}
+
+  .__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100%;
+		// height: 100%;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+
+    .__case {
+      flex: 1;
+      height: 100%;
+      transition: flex 0.8s ease;
+      transform:skewX(-5deg);
+      // border: 2px solid mediumspringgreen;
+      box-shadow: 5px 5px 4px rgba($color__primary, 0.25);
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover, &.is-open {
+        flex: 7;
+      }
+
+      &:first-child {
+        margin-left: -3rem;
+      } 
+      &:last-child {
+        margin-right: -3rem;
+      } 
+    }
+
+    .__item {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transform:skewX(5deg);
+      margin: 0 -3rem;
+      
+
+      &.--gark {
+        background: url('../../assets/Images/png/garagek.png')  left top/cover no-repeat border-box,
+        transparent;
+      }
+
+      &.--viva {
+        background: url('../../assets/Images/png/vivaticket.png')  left top/cover no-repeat border-box,
+        transparent;
+      }
+    }
+
+    .__body, .__heading {
+      display: none;
+    }
+  }
+}

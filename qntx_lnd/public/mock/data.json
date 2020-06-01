@@ -123,6 +123,20 @@
 			"Figma"
 		]
 	},
+	"works": [
+		{
+			"name": "GarageK",
+			"agency": "MotorK",
+			"link": "https://www.drivek.it/garage/#/",
+			"descr":"Realizzata una single page application su Vue.js come progetto pilota aziendale, poi diventato realtà!"
+		},
+		{
+			"name": "Vivaticket 2.0",
+			"agency": "Philmark / Vivaticket",
+			"link": "https://www.vivaticket.com/",
+			"descr":"Ridato un po di aria ad un sito che precedentemente erea \"squisistamente\" anni 90!"
+		}
+	],
 	"goals": {
 		"languages": [
 			{
@@ -151,7 +165,7 @@
 				"title": "2 posto Hackathon Editoria del Futuro",
 				"when": "ott 2017",
 				"where": "Talent Garden Fondazione Agnelli",
-				"link": "riconoscimentohttp://www.ecodibergamo.it/stories/bergamo-citta/editoria-innovativa-la-gara-a-torinoleco-nella-squadra-al-secondo-posto_1259800_11/"
+				"link": "http://www.ecodibergamo.it/stories/bergamo-citta/editoria-innovativa-la-gara-a-torinoleco-nella-squadra-al-secondo-posto_1259800_11/"
 			}
 		]
 	}
