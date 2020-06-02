@@ -64,16 +64,16 @@ export default class Navigation extends React.Component {
 					</button>
 				</div>
 				<div className="__social-wrap">
-					<a className="__icon" href="https://www.linkedin.com/in/giuseppedellavvocato/" target="_blank">
+					<a className="__icon" href="https://www.linkedin.com/in/giuseppedellavvocato/" target="_blank" rel="noopener noreferrer">
 						<img src={linkedinIcon} alt="Linkedin Icon" />
 					</a>
-					<a className="__icon" href="https://github.com/Giushw"  target="_blank">
+					<a className="__icon" href="https://github.com/Giushw"  target="_blank" rel="noopener noreferrer">
 						<img src={githubIcon} alt="Github Icon" />
 					</a>
-					<a className="__icon" href="https://www.behance.net/dellavvocac17e" target="_blank">
+					<a className="__icon" href="https://www.behance.net/dellavvocac17e" target="_blank" rel="noopener noreferrer">
 						<img src={behanceIcon} alt="Behance Icon" />
 					</a>
-					<a className="__icon" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank">
+					<a className="__icon" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank" rel="noopener noreferrer">
 						<img src={youtubeIcon} alt="Youtube Icon" />
 					</a>
 				</div>

@@ -65,7 +65,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
+  }
+
+  .__heading {
+    width: 35%;
+  }
+
+  .__body {
+    width: 65%;
   }
 
   .__where {
