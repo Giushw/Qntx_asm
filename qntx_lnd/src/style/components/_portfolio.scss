@@ -45,9 +45,22 @@
         flex: 7;
       }
 
+      &.is-open {
+        .__heading {
+          display: none;
+          opacity: 0;
+        }
+
+        .__body {
+          display: flex;
+          opacity: 1;
+        }
+      }
+
       &:first-child {
         margin-left: -3rem;
       } 
+
       &:last-child {
         margin-right: -3rem;
       } 
@@ -57,7 +70,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       background-position: center;
       background-size: cover;
       background-repeat: none;
@@ -75,9 +88,69 @@
         transparent;
       }
     }
+    
+    .__heading {
+      width: fit-content;
+      height: auto;
+      padding: 1rem;
+      background: rgba($color__primary--light, .7);
+      transform: skew(5deg);
+      transition: opacity 0.5s ease-in-out;
+      opacity: 1;
+    }
 
-    .__body, .__heading {
+    .__title {
+      color: $color__secondary--light;
+      font-size: 3rem;
+      font-weight: 500;
+      transform: skew(-5deg);
+    }
+
+    .__body {
       display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: fit-content;
+      height: auto;
+      max-width: 70%;
+      padding: 1rem;
+      background: rgba($color__secondary--light, .9);
+      transform: skew(5deg);
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    .__subtitle {
+      font-size: 3rem;
+      font-weight: 500;
+      transform: skew(-5deg);
+      margin-bottom: 2rem;
+    }
+
+    .__description {
+      font-size: 1.5rem;
+      font-weight: 400;
+      transform: skew(-5deg);
+      margin-bottom: 2rem;
+      max-width: 70%;
+    }
+
+    .__cta {
+      color: $color__secondary--light;
+      border-radius: 50px;
+      font-size: 1.7rem;
+      padding: 1rem;
+      font-weight: 500;
+      background-color: $color__accent--dark;
+      border: 3px solid $color__accent--dark;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      transform: skew(-5deg);
+
+      &:hover {
+        color: $color__accent--dark;
+        background-color: $color__secondary--light;
+      }
     }
   }
 }

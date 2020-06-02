@@ -1,0 +1,101 @@
+// Experiences
+
+.experiences {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	padding: 1rem;
+
+	.__intestation {
+		font-size: 5rem;
+		padding: 1rem 3rem;
+		background-color: $color__secondary--light;
+		margin-bottom: 2rem;
+	}
+
+  .__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100%;
+  }
+
+  .__work-wrap {
+    width: 100%;
+    height: 100%;
+  }
+
+  .__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba($color__secondary--light, .9);
+    
+    &:nth-of-type(2n) {
+      flex-direction: row-reverse;
+
+      .__heading {
+        align-items: flex-end;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .__heading, .__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .__where {
+    margin-bottom: .8rem;
+    display: flex;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.2rem;
+    color: $color__primary--light;
+  }
+
+  .__role {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    color: $color__accent;
+  }
+
+  .__agency {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: $color__secondary--dark;
+  }
+
+  .__description {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: $color__primary;
+  }
+}

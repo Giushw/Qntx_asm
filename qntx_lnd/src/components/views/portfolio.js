@@ -25,10 +25,10 @@ export function Porfolio(props) {
 								</h2>
 							</div>
 							<div className="__body">
-								<h4 className="__title">
+								<h4 className="__subtitle">
 									{props.works[0].agency}
 								</h4>
-								<p className="__descripton">
+								<p className="__description">
 									{props.works[0].descr}
 								</p>
 								<a className="__cta" href={props.works[0].link}>Dai un Occhiata</a>
@@ -37,8 +37,8 @@ export function Porfolio(props) {
 					</div>
 					<div className={`__case ${openSecond ? 'is-open' : ''}`} 
 						onClick={() => {
-							setOpenFirst(!openSecond);
-							setOpenSecond(true);
+							setOpenFirst(false);
+							setOpenSecond(!openSecond);
 						}}
 					>
 						<div className="__item --viva">
@@ -48,10 +48,10 @@ export function Porfolio(props) {
 								</h2>
 							</div>
 							<div className="__body">
-								<h4 className="__title">
+								<h4 className="__subtitle">
 									{props.works[1].agency}
 								</h4>
-								<p className="__descripton">
+								<p className="__description">
 									{props.works[1].descr}
 								</p>
 								<a className="__cta" href={props.works[1].link}>Dai un Occhiata</a>

@@ -16,3 +16,184 @@
 	-o-animation: rotating 2s linear infinite;
 	animation: rotating 2s linear infinite;
 }
+// Skill Graph Ani
+	// First
+@keyframes outer1 {
+	0% {
+		stroke-dashoffset: 880;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary--dark;
+	}
+	100% {
+		stroke-dashoffset: 300;
+		stroke:$color__secondary--dark;
+		opacity: 1;
+	}
+}
+
+@keyframes center1 {
+	0% {
+		stroke-dashoffset: 691;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary;
+	}
+	100% {
+		stroke-dashoffset: 150;
+		stroke: $color__secondary;
+		opacity: 1;
+	}
+}
+
+@keyframes inner1 {
+	0% {
+		stroke-dashoffset: 502;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__accent--light;
+	}
+	100% {
+		stroke-dashoffset: 50;
+		stroke: $color__accent--light;
+		opacity: 1;
+	}
+}
+	// Second
+@keyframes outer2 {
+	0% {
+		stroke-dashoffset: 880;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary--dark;
+	}
+	100% {
+		stroke-dashoffset: 175;
+		stroke:$color__secondary--dark;
+		opacity: 1;
+	}
+}
+
+@keyframes center2 {
+	0% {
+		stroke-dashoffset: 691;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary;
+	}
+	100% {
+		stroke-dashoffset: 50;
+		stroke: $color__secondary;
+		opacity: 1;
+	}
+}
+
+@keyframes inner2 {
+	0% {
+		stroke-dashoffset: 502;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__accent--light;
+	}
+	100% {
+		stroke-dashoffset: 15;
+		stroke: $color__accent--light;
+		opacity: 1;
+	}
+}
+	// Third
+@keyframes outer3 {
+	0% {
+		stroke-dashoffset: 880;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary--dark;
+	}
+	100% {
+		stroke-dashoffset: 375;
+		stroke:$color__secondary--dark;
+		opacity: 1;
+	}
+}
+
+@keyframes center3 {
+	0% {
+		stroke-dashoffset: 691;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary;
+	}
+	100% {
+		stroke-dashoffset: 150;
+		stroke: $color__secondary;
+		opacity: 1;
+	}
+}
+
+@keyframes inner3 {
+	0% {
+		stroke-dashoffset: 502;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__accent--light;
+	}
+	100% {
+		stroke-dashoffset: 70;
+		stroke: $color__accent--light;
+		opacity: 1;
+	}
+}
+	// Forth
+@keyframes outer4 {
+	0% {
+		stroke-dashoffset: 880;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary--dark;
+	}
+	100% {
+		stroke-dashoffset: 450;
+		stroke:$color__secondary--dark;
+		opacity: 1;
+	}
+}
+
+@keyframes center4 {
+	0% {
+		stroke-dashoffset: 691;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__secondary;
+	}
+	100% {
+		stroke-dashoffset: 220;
+		stroke: $color__secondary;
+		opacity: 1;
+	}
+}
+
+@keyframes inner4 {
+	0% {
+		stroke-dashoffset: 502;
+		stroke: $color__secondary--light;
+	}
+	50% {
+		stroke: $color__accent--light;
+	}
+	100% {
+		stroke-dashoffset: 125;
+		stroke: $color__accent--light;
+		opacity: 1;
+	}
+}

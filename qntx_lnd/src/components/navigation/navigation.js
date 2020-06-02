@@ -1,4 +1,9 @@
 import React from 'react';
+import linkedinIcon from '../../assets/Images/svg/linkedin.svg';
+import githubIcon from '../../assets/Images/svg/github.svg';
+import behanceIcon from '../../assets/Images/svg/behance.svg';
+import youtubeIcon from '../../assets/Images/svg/youtube.svg';
+
 
 export default class Navigation extends React.Component {
 	
@@ -6,7 +11,7 @@ export default class Navigation extends React.Component {
 		super(props);
 		this.state = {
 			active: false,
-			highligthed: false
+			links: this.props.social
 		};
 	}
 
@@ -57,6 +62,20 @@ export default class Navigation extends React.Component {
 							<path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
 						</svg>
 					</button>
+				</div>
+				<div className="__social-wrap">
+					<a className="__icon" href="https://www.linkedin.com/in/giuseppedellavvocato/" target="_blank">
+						<img src={linkedinIcon} alt="Linkedin Icon" />
+					</a>
+					<a className="__icon" href="https://github.com/Giushw"  target="_blank">
+						<img src={githubIcon} alt="Github Icon" />
+					</a>
+					<a className="__icon" href="https://www.behance.net/dellavvocac17e" target="_blank">
+						<img src={behanceIcon} alt="Behance Icon" />
+					</a>
+					<a className="__icon" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank">
+						<img src={youtubeIcon} alt="Youtube Icon" />
+					</a>
 				</div>
 			</nav>
 		);
